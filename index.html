@@ -4,71 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aya Fashion Shop</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            margin-bottom: 40px;
-        }
-
-        .product {
-            background: white;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 8px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #d90000;
-            text-align: right;
-            padding-right: 5px;
-        }
-
-        .category {
-            font-size: 14px;
-            color: #777;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>Aya Fashion Shop 👗👠</header>
+    <header>
+        <h1>Aya Fashion Shop</h1>
+        <p>Chaussures femme et homme – Qualité et élégance</p>
+    </header>
 
-    <h2 style="padding-left: 20px;">Nouveaux Produits</h2>
-
-    <div class="container">
+    <section class="products">
 
         <!-- 🟣 PRODUIT 1 - Chaussures femme élégante -->
         <div class="product">
@@ -77,14 +23,21 @@
             <div class="price">15 000 FCFA</div>
         </div>
 
-        <!-- 🟣 PRODUIT 2 - Mocassins hommes -->
+        <!-- 🩶 PRODUIT - Mule argentée femme -->
+        <div class="product">
+            <div class="category">Chaussures Femme</div>
+            <img src="MULE_ARGENTEE.png" alt="Mule argentée femme">
+            <div class="price">20 000 FCFA</div>
+        </div>
+
+        <!-- 🔵 PRODUIT 2 - Mocassins hommes -->
         <div class="product">
             <div class="category">Chaussures Homme</div>
             <img src="MOCASSINS_HOMME.png" alt="Mocassins homme">
             <div class="price">45 000 FCFA</div>
         </div>
 
-    </div>
+    </section>
 
 </body>
 </html>
